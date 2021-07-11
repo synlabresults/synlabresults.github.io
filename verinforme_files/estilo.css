@@ -1,0 +1,316 @@
+﻿/*csslint empty-rules: false*/
+
+@media screen and (max-width: 1130px) {
+    .cajaAzul {
+        /* padding: 0px 0px 0px 10px;*/
+        padding: 10px 25px 10px 10px;
+        /*min-width: 650px !important;*/
+    }
+    
+
+    /*span.data-text, span.label-text {
+        font-size: 28px;
+    }
+
+    
+
+    .logo {
+        width: 450px;
+    }*/
+
+}
+
+@media screen and (min-width: 590px) and (max-width: 1130px) {
+    .cajaAzul {
+        min-width: 550px !important;
+    }
+}
+
+@media screen and (min-width: 1131px) {
+    .cajaAzul {
+        padding: 10px 25px 10px 100px !important;
+       /* padding: 10px 25px 10px 10px;*/
+       min-width: 650px;
+       
+    }
+    
+
+    /*span.data-text, span.label-text {
+        font-size: 28px;
+    }
+
+    
+
+    .logo {
+        width: 450px;
+    }*/
+
+}
+
+/* sm */
+
+/*@media screen and (min-width: 768px) {
+    .cajaAzul {
+        font-size: 40px;
+    }
+    
+    span.data-text, span.label-text {
+        font-size: 28px;
+    }
+
+    .caja-conclusion, .caja-dato-resultado, .caja-label-resultado, .caja-resultado {
+        font-size: 28px;
+    }
+
+    .logo {
+        width: 450px;
+    }
+}*/
+
+/* md */
+/*
+@media screen and (min-width: 992px) {
+    .cajaAzul {
+        font-size: 26px;
+    }
+    .caja-conclusion, .caja-dato-resultado, .caja-label-resultado, .caja-resultado {
+        font-size: 20px;
+    }
+
+    .logo {
+        width: 300px;
+    }
+}*/
+
+/* lg */
+/*
+@media screen and (min-width: 1200px) {
+    .cajaAzul {
+        font-size: 26px;
+    }
+
+    .logo {
+        width: 250px;
+    }
+}*/
+
+
+:root {
+    --color-primario: #003768;
+    --color-secundario: rgb(103,167,194);
+    --verder-resultado: rgb(121,164,94);
+    --verder-resultado-light: rgb(222,232,215);
+    --rojo-resultado: rgb(186,51,52);
+    --rojo-resultado-light: rgb(244,200,195);
+    --amarillo-resultado: rgb(226,185,44);
+    --amarillo-resultado-light: rgb(255,232,149);
+}
+
+body {
+    color: var(--color-primario) !important;
+}
+
+.color-primario {
+    background-color: var(--color-primario);
+    color: #ffffff;
+}
+
+.color-secundario {
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+}
+.row {
+    margin: 10px !important;
+}
+
+.cajaAzul {
+    font-family: Arial;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: left;
+    /*color: #ffffff;
+    background: var(--color-secundario);*/
+    overflow: hidden;
+       
+    margin-bottom: 0px !important;
+}
+
+.tituloPrueba {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 32px;
+    font-weight: 400;
+    text-align: left;
+    color: #ffffff;
+    background: #8bbff7;
+    margin: 0 0 25px;
+    overflow: hidden;
+    padding: 0px 25px 5px 100px;
+}
+
+.center-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align: left;
+    font-family: "Arial";
+    width: 100%;
+    font-size: 18px;
+}
+
+tr {
+    font-family: Arial;
+    text-align: left;   
+    font-size: 18px;   
+}
+
+.left-right-border {
+    border-left: solid;
+    border-left-color: #66a6c2;
+    padding-left: 10px;
+    border-right: solid;
+    border-right-color: #66a6c2;
+    padding-right: 10px;
+    padding: 2px;
+}
+
+.left-border {
+    border-left: solid;
+    border-left-color: #66a6c2;
+    padding-left: 10px;
+    padding: 2px;
+}
+
+.bottom-border {    
+    border-bottom: solid;
+    border-bottom-color: darkgrey;
+    border-bottom-width: 3px;
+    padding: 2px;
+}
+
+span.label-text {
+    padding-left: 4px;
+    font-weight: 500;
+    
+}
+span.data-text {
+    font-weight: bolder;
+}
+
+
+.caja-conclusion {
+    color: var(--color-secundario);
+    font-weight: bold;
+    /*height:30px;*/
+    margin-top: 0px !important;
+    display: none !important;
+}
+
+.caja-advertencia {
+    color: var(--color-secundario);
+    font-weight: bold;
+}
+
+.caja-advertencia-caducado {
+    color: var(--rojo-resultado);
+    font-weight: bold;
+}
+
+.caja-label-resultado-1 {
+    background-color: var(--verder-resultado-light);
+    color: var(--verder-resultado);
+}
+.caja-dato-resultado-1 {
+    background-color: var(--verder-resultado);
+    color: white;
+}
+
+.caja-label-resultado-0 {
+    background-color: var(--verder-resultado-light);
+    color: var(--verder-resultado);
+}
+
+.caja-dato-resultado-0 {
+    background-color: var(--verder-resultado);
+    color: white;
+}
+
+
+.caja-label-resultado-2 {
+    background-color: var(--amarillo-resultado-light);
+    color: var(--amarillo-resultado);
+}
+
+.caja-dato-resultado-2 {
+    background-color: var(--amarillo-resultado);
+    color: white;
+}
+
+.caja-resultado {
+   /* height: 40px;*/
+    font-weight: bold;
+    text-align: center;
+}
+
+.margen-6 {
+    margin: 6px;
+}
+
+.logo {
+    width: 250px;
+}
+
+.icono-indicador {
+    margin-right: 10px;
+}
+
+img.codigo-qr {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.contenedor-qr {
+    margin: auto;
+    width: 310px;
+    border: 10px solid;
+}
+.texto-qr {
+    margin: 5px 0px 0px 0px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 21px;
+}
+.sub-texto-qr {
+    margin: 0px 0px 5px 0px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 21px;
+}
+.texto-qr>p, .sub-texto-qr>p { 
+    margin: 0px;
+}
+.boton-es {
+   background: transparent;
+   border-top: 0;
+   border-right: 2px solid;
+   border-left: 0;
+   border-bottom: 0;
+}
+.boton-en {
+    background: transparent;
+    border: 0px;
+}
+
+.menu-lang {
+    float: left;
+    margin: 20px;
+}
+#contenedor-reloj {
+    float: right;
+    margin: 20px;
+}
+
+
+
